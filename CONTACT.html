@@ -116,6 +116,7 @@
             height: 40px;
             
         }
+        
 
     </style>
         <link href="https://fonts.googleapis.com/css2?family=Jura:wght@300..700&display=swap" rel="stylesheet">
@@ -130,35 +131,38 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Lekton:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
         <script src="index.js"></script>
+        <script>
+            function showAlert(event) {
+                event.preventDefault(); 
+                alert("Form Submitted Successfully!");
+            }
+        </script>
 
 </head>
 <body>
     <div id="myIntro">
         <fieldset>
             <legend>CONTACTS DETAILS</legend>
-            <form action="" method="post">
+            <form action="" method="post" onsubmit="showAlert(event)">
                 
                 <label for="name">NAME : </label>
                 <input type="text" name="name" placeholder="enter your name" id="name">
                 <label for="email" >EMAIL : </label>
                 <input type="email" name="email" id="email" placeholder="enter your email" required>
                 <label for="telephone">TELEPHONE NO : </label>
-                <input type="tel" name="telephone id="telephone" placeholder="enter your telephone number" required> <hr>
+                <input type="tel" name="telephone" id="telephone" placeholder="enter your telephone number" required> <hr>
                 <input type="submit" value="SUBMIT" style="background-color: green; color: white;" class="submit">
-                <input type="reset" value="RESET" style="background-color:#3674B5; color: aliceblue;" class="reset">
+                <input type="reset" value="RESET" style="background-color:#3674B5; color: aliceblue;" class="reset">              
                 
-                
-            </form>
-            
+            </form>            
             <a href="./index.html">
                 <button style="border-radius: 10px; background-color:#FF2E63; padding: 0; width: 100%;">
                     <img src="./images/actionlauncher-svgrepo-com.svg" alt="home" height="30px" width="100%" style="display:flex; margin: auto; border-radius: 10px;">
                 </button>
-            </a>
-            
+            </a>            
         </fieldset>
-
     </div>
-    
+    <script src="./placeholder.js" defer></script>
+
 </body>
 </html>
